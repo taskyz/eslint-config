@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Eslint shared configuration",
   "main": "index.js",
+  "files": [
+    "./index.js"
+  ],
   "author": "@farischt",
   "license": "ISC",
   "devDependencies": {

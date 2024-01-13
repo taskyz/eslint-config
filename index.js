@@ -7,7 +7,7 @@ module.exports = {
     "plugin:import/warnings",
   ],
   rules: {
-    "@typescript-eslint/no-explicit-any": "on",
+    "@typescript-eslint/no-explicit-any": "warn",
     "no-console": "error",
     "import/no-unresolved": "off",
     "import/no-extraneous-dependencies": [
