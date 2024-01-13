@@ -1,6 +1,6 @@
 {
   "name": "@taskyz/eslint-config",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Eslint shared configuration",
   "main": "index.js",
   "files": [
