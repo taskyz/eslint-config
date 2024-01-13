@@ -1,6 +1,6 @@
 {
   "name": "@taskyz/eslint-config",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Eslint shared configuration",
   "main": "index.js",
   "files": [
@@ -9,7 +9,7 @@
   "author": "@farischt",
   "license": "ISC",
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^6.18.1",
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
     "eslint": "^8.56.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-import": "^2.29.1",
