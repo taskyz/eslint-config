@@ -1,8 +1,8 @@
 # @taskyz/eslint-config
 
-This library contains the eslint configuration used by taskyz. It is a private library.
+This library contains the eslint configuration used by Avicenne.
 
-## Installing the library in another project locally
+## Installing the library locally
 
 Since the organization is private, you'll need to be a member of the organization to install the library.
 
@@ -20,5 +20,41 @@ You'll need to generate a personal access token from [github](https://docs.githu
 You can now install the library using npm:
 
 ```bash
-npm install @taskyz/eslint-config
+npm install -D @taskyz/eslint-config
+```
+
+## Using the library
+
+To use the library, you'll need to add the following to your `.eslintrc.js` file:
+
+```js
+module.exports = {
+  extends: ["@taskyz"],
+};
+```
+
+## Publishing the library
+
+In order to publish the library, update manually the version in the `package.json` file and run the following command:
+
+```bash
+   git commit -m "update package version"
+   git tag v[your-package-version]
+   git push origin v[your-package-version]
+   git push origin main
+```
+
+A github action will automatically publish the package to the npm registry.
+
+## Installing the library within a github action
+
+If the repository A is trying to install this package within a github action, go to the [package settings](https://github.com/orgs/taskyz/packages/npm/eslint-config/settings), and add the repository to the list of repositories that can install the package.
+
+Next go to the repository A, and add the following to install dependencies step:
+
+```yaml
+ - name: Install dependencies
+     run: npm ci
+     env:
+      NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 ```
