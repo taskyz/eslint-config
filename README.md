@@ -38,10 +38,10 @@ module.exports = {
 In order to publish the library, update manually the version in the `package.json` file and run the following command:
 
 ```bash
-   git commit -m "update package version"
-   git tag v[your-package-version]
-   git push origin v[your-package-version]
-   git push origin main
+git commit -m "update package version"
+git tag v[your-package-version]
+git push origin v[your-package-version]
+git push origin main
 ```
 
 A github action will automatically publish the package to the npm registry.
