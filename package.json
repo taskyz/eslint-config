@@ -1,6 +1,6 @@
 {
   "name": "@taskyz/eslint-config",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "Taskyz's shareable ESLint configuration",
   "main": "index.js",
   "repository": {
