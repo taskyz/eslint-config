@@ -1,23 +1,35 @@
 {
   "name": "@taskyz/eslint-config",
   "version": "1.0.9",
-  "description": "Eslint shared configuration",
+  "description": "Taskyz's shareable ESLint configuration",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/taskyz/eslint-config.git"
+  },
   "files": [
-    "./index.js"
+    "index.js"
   ],
   "keywords": [
     "eslint",
     "eslintconfig"
   ],
-  "author": "@farischt",
+  "author": "Faris CHTATOU <faris.manage@gmail.com> (https://www.faris.chtatou.org)",
   "license": "ISC",
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix ."
+  },
+  "devDependencies": {
+    "@taskyz/eslint-config": "*",
+    "eslint": "^8.56.0"
+  },
   "peerDependencies": {
-    "@typescript-eslint/eslint-plugin": ">=5",
-    "eslint": ">=8.56",
-    "eslint-config-prettier": ">=9",
-    "eslint-plugin-import": ">=2.29",
-    "eslint-plugin-prettier": ">=5.1",
-    "eslint-plugin-simple-import-sort": ">=10"
+    "@typescript-eslint/eslint-plugin": ">= 5",
+    "eslint": ">= 8",
+    "eslint-config-prettier": ">= 9",
+    "eslint-plugin-import": ">= 2",
+    "eslint-plugin-prettier": ">= 5",
+    "eslint-plugin-simple-import-sort": ">= 10"
   }
 }

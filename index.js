@@ -1,4 +1,8 @@
+// eslint-disable-next-line no-undef
 module.exports = {
+  env: {
+    node: true,
+  },
   plugins: ["@typescript-eslint/eslint-plugin", "import"],
   extends: [
     "eslint:recommended",
@@ -11,7 +15,16 @@ module.exports = {
     "@typescript-eslint/interface-name-prefix": "off",
     "@typescript-eslint/explicit-function-return-type": "off",
     "@typescript-eslint/explicit-module-boundary-types": "off",
-    "@typescript-eslint/no-explicit-any": "warn",
+    "@typescript-eslint/no-explicit-any": "error",
+    "@typescript-eslint/ban-ts-comment": [
+      "error",
+      {
+        "ts-expect-error": { descriptionFormat: "^: TS\\d+ because .+$" },
+        "ts-ignore": true,
+        "ts-nocheck": true,
+        "ts-check": false,
+      },
+    ],
     "no-console": "error",
     "import/no-unresolved": "off",
     "import/no-extraneous-dependencies": [
