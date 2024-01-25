@@ -18,11 +18,14 @@
   "license": "ISC",
   "scripts": {
     "lint": "eslint .",
-    "lint:fix": "eslint --fix ."
+    "lint:fix": "eslint --fix .",
+    "format": "prettier --write ."
   },
   "devDependencies": {
     "@taskyz/eslint-config": "*",
-    "eslint": "^8.56.0"
+    "@taskyz/prettier-config": "^1.0.2",
+    "eslint": "^8.56.0",
+    "prettier": "^3.2.4"
   },
   "peerDependencies": {
     "@typescript-eslint/eslint-plugin": ">= 5",
@@ -30,6 +33,7 @@
     "eslint-config-prettier": ">= 9",
     "eslint-plugin-import": ">= 2",
     "eslint-plugin-prettier": ">= 5",
-    "eslint-plugin-simple-import-sort": ">= 10"
+    "eslint-plugin-simple-import-sort": ">= 10",
+    "prettier": ">= 3"
   }
 }
