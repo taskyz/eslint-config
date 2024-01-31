@@ -1,8 +1,12 @@
-// eslint-disable-next-line no-undef
 module.exports = {
   env: {
     node: true,
   },
+  parser: '@typescript-eslint/parser',
+  parserOptions: {
+    project: true,
+  },
+  root: true,
   plugins: ['@typescript-eslint', 'import'],
   extends: [
     'eslint:recommended',
@@ -11,11 +15,6 @@ module.exports = {
     'plugin:import/recommended',
     'plugin:prettier/recommended',
   ],
-  parser: '@typescript-eslint/parser',
-  parserOptions: {
-    project: true,
-  },
-  root: true,
   rules: {
     '@typescript-eslint/consistent-type-exports': 'error',
     '@typescript-eslint/consistent-type-imports': 'error',
